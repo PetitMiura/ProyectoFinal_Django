@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.Final - {{ title }}</title>
+    <link rel="stylesheet" href="{% static 'pico.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <p align="left">Mis criptos</p>
+    </header>
+    <nav class="container">
+        <ul>
+            <li><a href="{% url 'index' %}" {% if request.path == "/" %} class="disabled" {% endif %}>Inicio</a></li>
+            <li><a href="{% url 'purchase' %}" {% if request.path == "/compra" %} class="disabled" {% endif %}>Compra</a></li>
+            <li><a href="{% url 'status' %}" {% if request.path == "/status" %} class="disabled" {% endif %}>Status</a></li>
+        </ul>
+    </nav>
+    {% if messages %}
+        <div class="container" id="msg-error">
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p align="left">&copy; 2023 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
