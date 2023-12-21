@@ -1,0 +1,193 @@
+/* ESTILOS PARA CABECERA Y PIE DE PAGINA */
+header, footer {
+    background-color: #4f84f5; /* Color de fondo */
+    padding: 10px; /* Relleno de 10 píxeles */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+header:hover, footer:hover {
+    background-color: #1a60e4; /* Color de fondo rojo claro al pasar el cursor por encima */
+}
+
+header {
+    height: 10px; /* Altura del header de 10 píxeles */
+}
+
+footer {
+    height: 10px; /* Altura del footer de 10 píxeles */
+}
+/* Ajusta la altura mínima del contenedor principal */
+main {
+    min-height: calc(100vh - 2.5rem - 3rem); /* Ajusta estos valores según sea necesario */
+    padding-bottom: 3rem; /* Ajusta este valor según sea necesario */
+}
+
+/* Estilos para el footer */
+footer {
+    position: fixed; /* Fija el footer en la parte inferior */
+    bottom: 0; /* Alinea el footer en la parte inferior */
+    left: 0; /* Alinea el footer a la izquierda */
+    width: 100%; /* Ancho completo del footer */
+    height: 3rem; /* Ajusta este valor según sea necesario */
+    background-color: #4f84f5; /* Color de fondo del footer */
+    padding: 10px; /* Espaciado interno del footer */
+    color: white; /* Color del texto del footer */
+    font-weight: bold; /* Texto en negrita del footer */
+    text-align: left; /* Alineación del texto a la izquierda del footer */
+}
+
+/* ESTILO PARA EL MOVIMIENTO DEL TEXTO DE CABECERA Y PIE */
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Sin desplazamiento inicial */
+    }
+    100% {
+        transform: translateX(100%); /* Desplazamiento completo hacia la derecha */
+    }
+}
+
+header p, footer p {
+    color: white; /* Color del texto en blanco */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.0em; /* Tamaño de fuente de 1.0 em */
+    animation: slide 7s linear 1; /* Animación de desplazamiento durante 7 segundos */
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+    margin-top: 0px; /* Margen superior de 0 píxeles */
+    margin-bottom: 0px; /* Margen inferior de 0 píxeles */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%; /* Ancho del 100% del contenedor */
+    border-collapse: collapse; /* Colapsar los bordes de las celdas */
+}
+/* Estilos para las filas */
+tr {
+    background-color: #bda953; /* Color de fondo amarillo */
+}
+
+/* Estilos para las celdas de encabezado y datos */
+th, td {
+    padding: 10px; /* Relleno de 10 píxeles */
+    text-align: center; /* Alineación centrada del texto */
+
+}
+
+/* Estilos para las celdas de encabezado */
+th {
+    background-color: #e6bf11; /* Color de fondo amarillo */
+    font-weight: bold; /* Texto en negrita */
+}
+
+
+
+/* Estilos para las filas al pasar el cursor por encima */
+tr:hover {
+    background-color: #4f84f5; /* Color de fondo verde claro */
+}
+
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+
+}
+/* Estilos para el contenedor del formulario */
+#form-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las columnas del formulario */
+.form-column {
+    flex: 1;
+    max-width: 200px; /* Cambia este valor para ajustar el ancho de los campos de texto */
+}
+
+/* Estilos para el contenedor de botones */
+#button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilos para los botones dentro del contenedor de botones */
+#button-container button {
+    margin: 50px 50px;
+}
+
+/* Estilos para el orden visual en status*/
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.container1 p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container1 p span {
+    margin-right: 10px;
+}
+
+
+
+body {
+    background-image: url("images/fondo3.png");
+    /* Ajustar la imagen de fondo */
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat ;
+    
+
+  }
+
+h1 {
+    color: #e6bf11; /* Color del texto */
+    font-size: 48px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+.custom-select-class {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    /* Agrega cualquier otro estilo que desees */
+
+    /* Texto en blanco */
+    color: black;
+
+    /* Fondo del desplegable con color personalizado */
+    background-color: #e6bf11; /* Puedes cambiar el color a tu elección */
+}
+
+/* Estilos para el desplegable (opciones) */
+.custom-select-class option {
+    /* Cambiar el color del texto de las opciones */
+    color: #333; /* Puedes ajustar el color según tus preferencias */
+}
+p {
+    color: #000000; /* Color del texto */
+    font-size:24px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+.custom-select-class1 {
+    color: #000000; /* Color del texto */
+    font-size:24px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
